@@ -4,30 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.design.widget.AppBarLayout>
+                <ImageView
+                    android:id="@+id/iv_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/oval_margin"
+                    android:layout_marginLeft="@dimen/margin_xlarge_n"
+                    android:src="@drawable/custom_rectangle"/>
 
-    <include layout="@layout/content_main" />
+                <TextView
+                    android:id="@+id/tv_main_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xxlarge"
+                    android:layout_toRightOf="@+id/iv_main_logo"
+                    android:text="@string/main_text"
+                    android:textColor="@color/white_full"
+                    android:textSize="@dimen/text_regular_2x" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+                <TextView
+                    android:id="@+id/tv_main_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_main_text"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_toRightOf="@+id/iv_main_logo"
+                    android:background="@drawable/underline"
+                    android:clickable="true"
+                    android:shadowColor="@color/white_full"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="@string/main_title"
+                    android:textColor="@color/white_full"
+                    android:textSize="@dimen/text_heading_2x"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_main_logo"
+                    android:layout_width="@dimen/logo_size"
+                    android:layout_height="@dimen/logo_size"
+                    android:layout_marginLeft="@dimen/margin_medium"
+                    android:layout_marginTop="@dimen/margin_xxlarge"
+                    android:src="@drawable/new_york" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:src="@drawable/ic_notifications_none_white_24dp"
+                    android:background="@android:color/transparent"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_event"
+                    android:layout_below="@+id/iv_main_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium_2" />
+
+            </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

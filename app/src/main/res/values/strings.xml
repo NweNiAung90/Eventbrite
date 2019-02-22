@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">EventBrite-Assignment</string>
     <string name="action_settings">Settings</string>
+    <string name="title">Editor\'s Picks</string>
+    <string name="month">MAR</string>
+    <string name="day">9</string>
+    <string name="event_title">NYC Winter Wine Festival 2019</string>
+    <string name="event_loc">PlayStation Theater</string>
+    <string name="event_on">on Eventbrite</string>
+    <string name="event_follow_up1_title"><![CDATA[Chocolate, Wine & Whiskey Festival - Brooklyn]]></string>
+    <string name="event_follow_up1_loc">Sat, March 9. 12:00 PM EST</string>
+    <string name="event_follow_up1_on">Brooklyn EXPO Center</string>
+    <string name="event_follow_up2_title">Pastrytown 2019</string>
+    <string name="event_follow_up2_loc">Sat, March 16. 11:00 AM EDT</string>
+    <string name="event_follow_up2_on">Industry City</string>
+    <string name="event_follow_up3_title">Brick Fest Live! at The New York Hall of Science (Queens, NY)</string>
+    <string name="event_follow_up3_loc">New York Hall of Science</string>
+    <string name="event_follow_up3_on">Sun, Mar 31, 2019, 6:00 PM EDT</string>
+    <string name="main_text">What\'s good in</string>
+    <string name="main_title">New York</string>
+    <string name="more_event">See more events like this</string>
 </resources>
